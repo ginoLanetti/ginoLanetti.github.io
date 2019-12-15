@@ -1,0 +1,346 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #072248;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bfbfbf;
+}
+
+h1 {
+  color: #c8b163;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.8vh;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.shadow-wrapper {
+  min-height: 300vh;
+  box-shadow: 0 -0.1rem 0.42rem 0.2rem rgba(148, 148, 148, 1);
+}
+
+.pink-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcdbdf;
+  margin: 0;
+  height: 100vh;
+  background-image: url(../img/shoemaker.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav__logo {
+  display: none;
+}
+
+.nav__hamburger {
+  display: block;
+  position: fixed;
+  top: 2rem;
+  user-select: none;
+  cursor: pointer;
+  width: 2rem;
+  z-index: 2;
+}
+.nav__hamburger-large-img {
+  display: none;
+}
+.nav__hamburger-small-img {
+  display: inherit;
+}
+.nav__overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgb(7, 34, 72);
+  background-color: rgba(7, 34, 72, 0.9);
+  overflow-x: hidden;
+  transition: 0.2s;
+}
+
+.nav__overlay-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.nav__overlay a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #c8b163;
+  display: block;
+  transition: 0.3s;
+  padding: 1rem;
+}
+
+.nav__overlay a:hover,
+.nav__overlay a:focus {
+  color: #f1f1f1;
+}
+
+.nav__overlay .nav__close-button {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  font-size: 2rem;
+}
+.pink-wrapper__photo-text h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #c8b163;
+  padding: 1.2rem;
+}
+.pink-wrapper__photo-caption {
+  width: 50vw;
+  height: 50vw;
+  background-color: #072248;
+  background-position-y: 50%;
+  background-position-x: 55%;
+  border-radius: 0.5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.pink-wrapper__photo-frame-up {
+  width: 47.5vw;
+  height: 20vw;
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+  border-top: 0.25vw solid #c8b163;
+  border-left: 0.25vw solid #c8b163;
+  border-right: 0.25vw solid #c8b163;
+}
+
+.pink-wrapper__photo-frame-down {
+  width: 47.5vw;
+  height: 20vw;
+  position: absolute;
+  top: 29vw;
+  left: 1vw;
+  border-bottom: 0.25vw solid #c8b163;
+  border-left: 0.25vw solid #c8b163;
+  border-right: 0.25vw solid #c8b163;
+}
+.white-wrapper {
+  min-height: 100vh;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position-x: 37vw;
+  background-position-y: 40vh;
+}
+.white-wrapper__list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 3rem;
+}
+.white-wrapper__list-header {
+  text-align: center;
+}
+
+.navy-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: #072248;
+  padding: 2rem;
+}
+
+.navy-wrapper * {
+  color: white;
+}
+
+.navy-wrapper__caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15vh;
+}
+
+.navy-wrapper__title {
+  color: #c8b163;
+  border-top: 0.1rem solid;
+  border-bottom: 0.1rem solid;
+}
+.navy-wrapper__subtitle {
+  text-align: center;
+}
+.navy-wrapper__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.navy-wrapper__form-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navy-wrapper__form-element input[type="text"] {
+  color: #303030;
+  width: 50vw;
+}
+.navy-wrapper__form-gender {
+  flex-direction: row;
+}
+input[type="text"],
+input[type="radio"],
+select,
+textarea {
+  border: 0.1rem solid #ccc;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+textarea:focus {
+  outline: 0.25rem solid #c8b163;
+}
+.navy-wrapper__form-submit {
+  background-color: #c8b163;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: bold;
+  outline: none;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
+@media only screen and (min-width: 850px) {
+  .pink-wrapper {
+    height: 90vh;
+    justify-content: flex-start;
+    background-image: none;
+  }
+  .nav {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+    background-color: #fcdbdf;
+    align-items: center;
+    padding: 3rem 4rem;
+  }
+  .nav__logo {
+    display: flex;
+    color: #072248;
+    user-select: none;
+    font-family: "Mr De Haviland", cursive;
+    font-size: 3rem;
+  }
+  .nav__hamburger {
+    position: inherit;
+    display: flex;
+    width: 2rem;
+  }
+  .nav__hamburger-small-img {
+    display: none;
+  }
+  .nav__hamburger-large-img {
+    display: inherit;
+  }
+  .pink-wrapper__photo-caption {
+    background-image: url(../img/shoemaker.jpg);
+  }
+
+  .pink-wrapper__photo-text h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  .vertical-line {
+    border-left: 0.25rem dashed #c8b163;
+    height: 80vh;
+    position: absolute;
+    left: 50vw;
+    top: 80vh;
+    z-index: 0;
+  }
+  .white-wrapper {
+    background-image: url(../img/shoe.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 37vw;
+    background-position-y: 40vh;
+  }
+  .white-wrapper__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .white-wrapper__list-element {
+    flex-basis: 50%;
+  }
+  .white-wrapper__list-element:nth-child(odd) > p,
+  h2 {
+    margin-right: 3rem;
+    margin-left: 0;
+  }
+  .white-wrapper__list-element:nth-child(even) > p,
+  h2 {
+    margin-left: 3rem;
+  }
+  .white-wrapper__list-element:last-child {
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .shadow-wrapper {
+    margin: 0 10vw;
+  }
+  .pink-wrapper__photo-caption {
+    width: 35vw;
+    height: 35vw;
+  }
+  .pink-wrapper__photo-text {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+    width: 35vw;
+  }
+  .pink-wrapper__photo-frame-up {
+    width: 32.6vw;
+    height: 12vw;
+  }
+  .pink-wrapper__photo-frame-down {
+    width: 32.6vw;
+    height: 12vw;
+    top: 22vw;
+  }
+}

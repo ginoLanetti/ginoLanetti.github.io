@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,600i|Mr+De+Haviland"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/shoemaker.css"/>
+  <title>Gino Lanetti</title>
+</head>
+<body>
+  <div class="shadow-wrapper">
+    <nav class="nav">    
+      <div id="navOverlay" class="nav__overlay">
+        <a href="javascript:void(0)" class="nav__close-button" onclick="closeNav()">x</a>
+        <div class="nav__overlay-content">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Shoecare</a>
+        </div>
+      </div>
+      <div class="nav__logo">GL</div>
+      <div class="nav__hamburger" onclick="openNav()">
+        <img src="./img/hamburger.svg" alt="" class="nav__hamburger-small-img"/>
+        <img src="./img/hamburger2.svg" alt="" class="nav__hamburger-large-img"/>
+      </div>
+    </nav>
+    <div class="pink-wrapper">
+      <div class="pink-wrapper__photo-caption">
+        <div class="pink-wrapper__photo-frame-up"></div>
+        <span class="pink-wrapper__photo-text">
+          <h1>
+            GINO LANETTI
+          </h1>
+        </span>
+        <div class="pink-wrapper__photo-frame-down"></div>
+      </div>
+      <div class="vertical-line"></div>
+    </div>
+    <div class="white-wrapper">
+      <ul class="white-wrapper__list">
+        <li class="white-wrapper__list-element">
+          <h2 class="white-wrapper__list-header">DESIGN</h2>
+          <p class="white-wrapper__list-paragraph">
+            At GINO LANETTI we believe in Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Praesent malesuada imperdiet
+            pulvinar. Maecenas a massa tincidunt, ornare eros in, accumsan
+            eros. Proin sed nisl neque. Nulla at hendrerit lorem, id bibendum
+            enim. Donec dictum, ligula ac aliquet mattis, lorem purus
+            consectetur nisi, sed consequat nisl velit ut neque. Donec tellus
+            nisl, hendrerit et auctor et, tincidunt sed arcu. Nunc et massa
+            hendrerit sapien viverra sagittis. Duis eu urna auctor, placerat
+            ante at, luctus eros. Duis vel turpis diam
+          </p>
+        </li>
+        <li class="white-wrapper__list-element">
+          <h2 class="white-wrapper__list-header">LAST</h2>
+          <p class="white-wrapper__list-paragraph">
+            The making of the last is the most important aspect of Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Praesent malesuada
+            imperdiet pulvinar. Maecenas a massa tincidunt, ornare eros in,
+            accumsan eros. Proin sed nisl neque. Nulla at hendrerit lorem, id
+            bibendum enim. Donec dictum, ligula ac aliquet mattis, lorem purus
+            consectetur nisi, sed consequat nisl velit ut neque. Donec tellus
+            nisl, hendrerit et auctor et, tincidunt sed arcu. Nunc et massa
+            hendrerit sapien viverra sagittis. Duis eu urna auctor, placerat
+            ante at, luctus eros. Duis vel turpis diam
+          </p>
+        </li>
+        <li class="white-wrapper__list-element">
+          <h2 class="white-wrapper__list-header">MATERIALS</h2>
+          <p class="white-wrapper__list-paragraph">
+            The upper leather at GINO LANETTI is primarily calf and Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            malesuada imperdiet pulvinar. Maecenas a massa tincidunt, ornare
+            eros in, accumsan eros. Proin sed nisl neque. Nulla at hendrerit
+            lorem, id bibendum enim. Donec dictum, ligula ac aliquet mattis,
+            lorem purus consectetur nisi, sed consequat nisl velit ut neque.
+            Donec tellus nisl, hendrerit et auctor et, tincidunt sed arcu.
+            Nunc et massa hendrerit sapien viverra sagittis. Duis eu urna
+            auctor, placerat ante at, luctus eros. Duis vel turpis diam
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="navy-wrapper">
+      <div class="navy-wrapper__caption">
+        <h2 class="navy-wrapper__title">Contact us</h2>
+        <h3 class="navy-wrapper__subtitle"> Welcome to the world of finest bootmaking</h3>
+      </div>
+      <form name="form" class="navy-wrapper__form">
+        <div class="navy-wrapper__form-element">
+          <label for="firstName">First Name</label>
+          <input type="text" class="firstName" placeholder="Your name..." />
+        </div>
+        <div class="navy-wrapper__form-element">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="lastName" placeholder="Your last name..." />
+        </div>
+        <div class="navy-wrapper__form-element">
+          <label for="email">e-mail</label>
+          <input type="text" class="email" placeholder="Your e-mail..." />
+        </div>
+        <div class="navy-wrapper__form-element navy-wrapper__form-gender" >
+          <input type="radio" name="gender" value="male" />  
+          Male
+          <input type="radio" name="gender" value="female" /> 
+          Female
+        </div>
+        <button type="submit" class="navy-wrapper__form-submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  </div>
+  <script>
+      function openNav() {
+        document.getElementById("navOverlay").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("navOverlay").style.width = "0%";
+      }
+  </script>
+</body>
+</html>
