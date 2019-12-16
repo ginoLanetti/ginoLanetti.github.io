@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  background: #bad8e1;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 1rem;
+}
+label {
+  font-size: 0.8rem;
+}
+.AT__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60vw;
+  height: 100vh;
+  background:  #f8f9f9;
+  margin: 0 auto;
+  min-height: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.AT__header {
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  color: #035e83;
+}
+.AT__inputs-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.AT__sequence-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AT__range-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AT__step-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AT__sequence-input p {
+  background-color: aliceblue;
+}
+.AT__sequence-input-label {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: goldenrod;
+  padding: 0.6rem;
+  border-radius: 0.1rem;
+  display: inline-block;
+  border: none;
+}
+.AT__generate-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AT__generate-chart button {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: goldenrod;
+  padding: 0.6rem;
+  width: 15rem;
+  border-radius: 0.1rem;
+  display: inline-block;
+  border: none;
+  transition: all 0.1s ease 0s;
+}
+.AT__plot-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  margin-top: 1rem;
+  width: 90%;
+  background-color: #e6e6e6;
+  color: goldenrod;
+}
+.AT__plot-placeholder-text {
+  font-size: 3rem;
+  font-weight: lighter;
+}

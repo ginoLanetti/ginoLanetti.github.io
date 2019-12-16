@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <base href="/"/>
+    <title>ATcontent</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./js/AT.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/AT.css" />
+  </head>
+  <body>
+    <div class="AT__wrapper">
+      <h1 class="AT__header">AT content comparison</h1>
+      <form name="AT-form" class="AT__inputs-area">
+        <div class="AT__sequence-input" class="AT__sequence-input">
+          <h2>Select a text file</h2>
+          <p>.txt/.fasta/.fastq/.fna</p>
+          <label for="fileInput" class="AT__sequence-input-label"
+            >choose file</label
+          >
+          <input
+            type="file"
+            name="file"
+            id="fileInput"
+            accept=".txt,.fasta,.fastq,.fna"
+            style="display: none;"
+          />
+          <div class="note"></div>
+        </div>
+        <div class="AT__range-input">
+          <label for="range">
+            <h3>Type a nucleotide range length (bp):</h3>
+          </label>
+          <input type="number" name="range" id="range" name="range" />
+        </div>
+        <div class="AT__step-input">
+          <label for="step">
+            <h3>Type a step length (bp):</h3>
+          </label>
+          <input type="number" name="step" id="step" name="step" />
+        </div>
+      </form>
+      <div class="AT__generate-chart">
+        <h2>Calculate AT content for provided sequences</h2>
+        <button onclick="calcAll()" id="calcAll">Calculate</button>
+      </div>
+      <div id="plot-area" class="AT__plot-placeholder">
+        <h2 class="AT__plot-placeholder-text">
+          Your plot will be rendered here
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
