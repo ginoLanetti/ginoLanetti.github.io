@@ -1,0 +1,47 @@
+body{
+    background-image: url('../img/crowd.jpg');
+}
+h1{
+    text-align: center;
+    margin: 3rem;
+    font-family: 'Rock Salt', cursive;
+}
+.keys{
+    display: block;
+    margin: 8rem auto;
+    width: 9rem;
+    margin: 8em auto;
+    text-align: center;
+}
+.key{
+    display: block;
+    border: 2px solid black;
+    padding: 1rem;
+    background-color:  rgba(40, 48, 56, 0.7);
+    color: whitesmoke;
+    font-family: 'Patua One', cursive;
+    border-radius: 0.5rem;
+    width: 6rem;
+    margin: 0.5rem auto;
+    cursor: pointer;
+    transition: 0.05s;
+}
+.playing{
+    background-color:  rgba(40, 48, 56, 1);
+    transform: scale(1.1);
+    border-color: yellow;
+}
+kbd{
+    color: yellow;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Patua One', cursive;
+}
+@media screen and (min-width: 768px){
+    .key{
+        display: inline-block;
+    }
+    .keys{
+       width: 43rem;
+    }
+}

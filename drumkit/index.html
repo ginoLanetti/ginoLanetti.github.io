@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Virtual Drumkit</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/drums.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rock+Salt"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Patua+One"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Virtual Drumkit</h1>
+    <div class="keys">
+      <div class="key" data-key="70">
+        <kbd>F</kbd><br />
+        <span class="sound">snare</span>
+      </div>
+      <div class="key" data-key="72">
+        <kbd>H</kbd><br />
+        <span class="sound">horn</span>
+      </div>
+      <div class="key" data-key="74">
+        <kbd>J</kbd><br />
+        <span class="sound">hi-hat</span>
+      </div>
+      <div class="key" data-key="75">
+        <kbd>K</kbd><br />
+        <span class="sound">keys</span>
+      </div>
+      <div class="key" data-key="32">
+        <kbd>SPACE</kbd><br />
+        <span class="sound">kick</span>
+      </div>
+    </div>
+
+    <audio data-key="70" src="./sounds/CKS Dre 2 SD.wav"></audio>
+    <audio data-key="72" src="./sounds/dre horn 2.wav"></audio>
+    <audio data-key="74" src="./sounds/01 HHclosed08.wav"></audio>
+    <audio data-key="75" src="./sounds/2Pac Keys.wav"></audio>
+    <audio data-key="32" src="./sounds/Drebass.wav"></audio>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
