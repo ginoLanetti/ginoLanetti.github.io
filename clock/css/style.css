@@ -1,0 +1,92 @@
+body {
+  background-image: url("../img/green.jpg");
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  position: relative;
+  width: 21rem;
+  margin: 5rem auto;
+  color: #bf701d;
+  top: 3rem;
+}
+.clock {
+  width: 25rem;
+  height: 25rem;
+  border: 8px solid white;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: calc(50vh - 22rem);
+  background-color: rgba(0, 54, 44, 0.7);
+}
+.hourArm {
+  position: absolute;
+  width: 9rem;
+  height: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 3.5rem;
+  margin-top: 12.5rem;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+  -webkit-transition-timing-function: cubic-bezier(0.06, 2.92, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.06, 2.92, 0.58, 1);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.minuteArm {
+  position: absolute;
+  width: 11rem;
+  height: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 1.5rem;
+  margin-top: 12.5rem;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+  -webkit-transition-timing-function: cubic-bezier(0.06, 2.92, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.06, 2.92, 0.58, 1);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.secondArm {
+  position: absolute;
+  width: 11rem;
+  height: 0.1rem;
+  background-color: #bf701d;
+  margin-left: 1.5rem;
+  margin-top: 12.7rem;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+  -webkit-transition-timing-function: cubic-bezier(0.06, 2.92, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.06, 2.92, 0.58, 1);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.clockCenter {
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #bf701d;
+  margin-top: 12.5rem;
+  margin-left: 12.25rem;
+}
